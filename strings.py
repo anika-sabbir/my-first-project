@@ -78,3 +78,38 @@ print(str.replace("a","e"))
 # find() - returns index position of first 'e' found
 str="I am an Engineer"
 print(str.find("e"))
+
+
+# write a programming to input user's first name & print length.
+name=input("enter your name")
+print("length of your name is",len(name))
+
+# Write a programming to find the occurrence of '$' in a string.
+
+str="Hi,$Iam the $ symbol $88.88"
+print(str.count("$"))
+
+#Take your name and city in two separate strings, then print
+
+str1=("Hello! I am Anika")
+str2=(" from Chattogram")
+final_str=str1+str2 
+print(final_str)
+
+#Print the word "Python" 5 times using * 
+str="Python"
+print(str * 5)
+
+#Upper & Lower:Take any string and print it in ALL CAPS, then in all lowercase.
+str="i am anika\n i am an engineer"
+print(str.upper()) 
+print(str.lower())
+
+# Mix it all:Make 3 strings — your name, profession, and country. Join them and print total length.
+str1="I am Anika"
+str2="Iam an engineer"
+str3="I am from Bangladesh"
+final_str=str1 +","+str2+","+str3
+print(final_str)
+print(len(final_str))
+
