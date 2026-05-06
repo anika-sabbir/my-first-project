@@ -69,6 +69,47 @@ cal_fact(6)
 
 #/WAF to convert USD to TK
 def converter(usd_val):
-   tk_val =usd_val * 125
-   print(usd_val,"USD =",tk_val,"TK")
+    tk_val = usd_val * 125   # example conversion rate
+    print(usd_val, "USD =", tk_val, "TK")
+
 converter(2)
+
+
+
+
+
+#/Write a recursive function that prints numbers from n down to 1.
+def show(n):
+    if(n == 0):
+        return
+    print(n)
+    show(n-1)
+
+show(5) 
+
+
+#/Write a recursive function to calculate the factorial of a number. Call it with n
+def fact(n):
+   if(n == 1 or n == 0):
+      return 1
+   return fact(n-1) * n
+
+print(fact(6))
+
+#/Write a recursive function to calculate the sum of first n natural numbers.
+def calc_sum(n):
+   if(n == 0):
+      return 0
+   return calc_sum(n-1) + n
+sum = calc_sum(10)
+print(sum)
+
+
+#/Write a recursive function to print all elements in list.
+def print_list(list,idx=0):
+   if(idx == len(list)):
+      return
+   print(list[idx])
+   print_list(list,idx+1)
+fruits =["mango","banana","apple"]
+print_list(fruits)
